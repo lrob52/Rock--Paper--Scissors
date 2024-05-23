@@ -1,0 +1,150 @@
+/* .press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  } */
+  
+  
+body {
+    background-color: magenta;
+    background-size: cover;
+    height: auto;
+    margin: 0;
+    padding: 25px;
+}
+
+.main {  
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    border-style: solid;
+    border-color: gold;
+    border-width: 5px;
+    width: 100%;
+    height: auto;
+}
+
+/* @media screen and (min-width:1280){
+    
+} */
+
+.header {
+    color: gold;
+    font-size: 50px;
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#bigring {
+    display: grid;
+    border: 10px yellow solid;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+}
+
+.outside {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 15px 0;
+}
+
+#winner {
+    /* position: absolute; */
+    border: 5px rgb(135, 0, 185) solid;
+    background-color: rgb(135, 0, 185);
+    color: aqua;
+    font-size: 40px;
+    height: 490px;
+    width: 490px;
+    border-radius: 50%;
+    margin: 0%;
+    text-align: center;
+    align-content: center;
+}
+
+#timer {
+    color: gold;
+    font-size: 55px;
+}
+
+.button-container {
+    display: grid;
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.grid-item {
+    position: relative;
+    margin: 10px;
+    border: solid gold 10px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+button {
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: grabbing;
+    border: solid aqua 10px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    color: greenyellow;   
+}
+
+#rock {
+    background-image: url("/images/the-rock-headshot2.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 140%;
+}
+
+#paper {
+    background-image: url("/images/paperboy-prince-ny-rich2.jpeg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 140%;
+}
+
+#scissors {
+    background-image: url("/images/sza-for-skims-rich2.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 140%;
+}
+
+.rock-win {
+    background-image: url("/images/the-rock-headshot2.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+  }
+  
+  .paper-win {
+    background-image: url("/images/paperboy-prince-ny-rich2.jpeg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+  }
+  
+  .scissors-win {
+    background-image: url("/images/sza-for-skims-rich2.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+  }
